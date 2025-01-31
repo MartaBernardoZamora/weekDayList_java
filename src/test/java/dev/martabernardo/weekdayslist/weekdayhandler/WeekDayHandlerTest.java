@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.instanceOf;
 
 public class WeekDayHandlerTest {
 
@@ -16,6 +17,7 @@ public class WeekDayHandlerTest {
         weekDayHandler.createList();
 
        assertThat(weekDayHandler, is(notNullValue()));
+       assertThat(weekDayHandler, instanceOf(WeekDayHandler.class));
 
     }
 }
