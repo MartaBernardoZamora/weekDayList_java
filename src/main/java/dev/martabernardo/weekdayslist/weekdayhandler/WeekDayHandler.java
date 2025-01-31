@@ -9,4 +9,9 @@ public class WeekDayHandler {
     public void createList() {
         weekDayHandler.addAll(List.of("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
     }
+
+    public List<String> getDays() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getDays'");
+    }
 }

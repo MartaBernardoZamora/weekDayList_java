@@ -6,12 +6,16 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
+
+import java.util.List;
+
 import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.contains;
 
 public class WeekDayHandlerTest {
 
     @Test
-    @DisplayName("Test createList method")
+    @DisplayName("Test createList method of uml diagram")
     void testCreateList() {
         WeekDayHandler weekDayHandler = new WeekDayHandler();
         weekDayHandler.createList();
@@ -19,5 +23,16 @@ public class WeekDayHandlerTest {
        assertThat(weekDayHandler, is(notNullValue()));
        assertThat(weekDayHandler, instanceOf(WeekDayHandler.class));
        assertThat(weekDayHandler.weekDayHandler.size(), is(7));
+    }
+    @Test
+    @DisplayName("Test getDays method")
+    void testGetDays() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
+
+        List<String> daysExpected = weekDayHandler.getDays();
+
+        assertThat(daysExpected, contains("Monday"));
+        assertThat(daysExpected, is(7));
     }
 }
