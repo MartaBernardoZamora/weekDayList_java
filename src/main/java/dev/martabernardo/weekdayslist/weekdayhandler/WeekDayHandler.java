@@ -17,4 +17,8 @@ public class WeekDayHandler {
     public int getSizeList() {
         return weekDayHandler.size();
     }
+
+    public void deleteDay(String day) {
+        weekDayHandler.remove(day);
+    }
 }

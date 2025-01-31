@@ -11,6 +11,7 @@ import java.util.List;
 
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.not;
 
 public class WeekDayHandlerTest {
 
@@ -45,5 +46,17 @@ public class WeekDayHandlerTest {
 
         assertThat(sizeList, is(7));
     }
+    @Test
+    @DisplayName("Test deleteDay method")
+    void testDeleteDay() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
 
+        weekDayHandler.deleteDay("Monday");
+
+        List<String> daysExpected = weekDayHandler.getDays();
+
+        assertThat(daysExpected, not(contains("Monday")));
+        assertThat(daysExpected.size(), is(6));
+    }
 }
