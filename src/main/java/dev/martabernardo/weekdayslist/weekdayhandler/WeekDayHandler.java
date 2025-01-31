@@ -15,7 +15,6 @@ public class WeekDayHandler {
     }
 
     public int getSizeList() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSizeList'");
+        return weekDayHandler.size();
     }
 }
