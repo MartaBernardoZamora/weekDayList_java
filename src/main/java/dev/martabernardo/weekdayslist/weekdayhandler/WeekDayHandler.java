@@ -29,4 +29,9 @@ public class WeekDayHandler {
     public boolean dayExists(String day) {
         return weekDayHandler.contains(day);
     }
+
+    public void emptyList() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'emptyList'");
+    }
 }

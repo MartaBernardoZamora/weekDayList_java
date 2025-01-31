@@ -11,5 +11,7 @@ public final class App {
         weekDayHandler.getDays();
         weekDayHandler.getSizeList();
         weekDayHandler.deleteDay("Monday");
+        weekDayHandler.getSpecificDay("Tuesday");
+        weekDayHandler.dayExists("Tuesday");
     }
 }
