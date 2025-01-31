@@ -59,4 +59,14 @@ public class WeekDayHandlerTest {
         assertThat(daysExpected, not(contains("Monday")));
         assertThat(daysExpected.size(), is(6));
     }
+    @Test
+    @DisplayName("Test getSpecificDay method")
+    void testGetSpecificDay() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
+
+        String day = weekDayHandler.getSpecificDay("Friday");
+
+        assertThat(day, is("Friday"));
+    }
 }

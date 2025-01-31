@@ -9,5 +9,7 @@ public final class App {
         WeekDayHandler weekDayHandler = new WeekDayHandler();
         weekDayHandler.createList();
         weekDayHandler.getDays();
+        weekDayHandler.getSizeList();
+        weekDayHandler.deleteDay("Monday");
     }
 }

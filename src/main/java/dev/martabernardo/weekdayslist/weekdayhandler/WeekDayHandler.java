@@ -21,4 +21,8 @@ public class WeekDayHandler {
     public void deleteDay(String day) {
         weekDayHandler.remove(day);
     }
+
+    public String getSpecificDay(String day) {
+        return weekDayHandler.get(weekDayHandler.indexOf(day));
+    }
 }
