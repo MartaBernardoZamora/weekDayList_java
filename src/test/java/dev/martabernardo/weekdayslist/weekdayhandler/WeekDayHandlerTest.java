@@ -35,4 +35,15 @@ public class WeekDayHandlerTest {
         assertThat(daysExpected, contains("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
         assertThat(daysExpected.size(), is(7));
     }
+    @Test
+    @DisplayName("Test getSizeList method")
+    void testGetSizeList() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
+
+        int sizeList = weekDayHandler.getSizeList();
+
+        assertThat(sizeList, is(7));
+    }
+
 }
