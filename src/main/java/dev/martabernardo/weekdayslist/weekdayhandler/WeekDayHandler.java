@@ -11,7 +11,6 @@ public class WeekDayHandler {
     }
 
     public List<String> getDays() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDays'");
+        return weekDayHandler;
     }
 }

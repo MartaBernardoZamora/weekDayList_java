@@ -32,7 +32,7 @@ public class WeekDayHandlerTest {
 
         List<String> daysExpected = weekDayHandler.getDays();
 
-        assertThat(daysExpected, contains("Monday"));
-        assertThat(daysExpected, is(7));
+        assertThat(daysExpected, contains("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+        assertThat(daysExpected.size(), is(7));
     }
 }
