@@ -18,6 +18,6 @@ public class WeekDayHandlerTest {
 
        assertThat(weekDayHandler, is(notNullValue()));
        assertThat(weekDayHandler, instanceOf(WeekDayHandler.class));
-
+       assertThat(weekDayHandler.weekDayHandler.size(), is(7));
     }
 }
