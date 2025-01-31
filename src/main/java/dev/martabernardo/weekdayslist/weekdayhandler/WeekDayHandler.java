@@ -22,8 +22,7 @@ public class WeekDayHandler {
         weekDayHandler.remove(day);
     }
 
-    public String getSpecificDay(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSpecificDay'");
+    public String getSpecificDay(String day) {
+        return weekDayHandler.get(weekDayHandler.indexOf(day));
     }
 }
