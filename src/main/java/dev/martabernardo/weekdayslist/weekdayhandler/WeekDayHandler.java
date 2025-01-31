@@ -18,8 +18,7 @@ public class WeekDayHandler {
         return weekDayHandler.size();
     }
 
-    public void deleteDay(String string) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'deleteDay'");
+    public void deleteDay(String day) {
+        weekDayHandler.remove(day);
     }
 }
