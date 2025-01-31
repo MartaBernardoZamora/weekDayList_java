@@ -69,4 +69,14 @@ public class WeekDayHandlerTest {
 
         assertThat(day, is("Friday"));
     }
+    @Test
+    @DisplayName("Test dayExists method")
+    void testDayExists() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
+
+        boolean dayExists = weekDayHandler.dayExists("Monday");
+
+        assertThat(dayExists, is(true));
+    }
 }

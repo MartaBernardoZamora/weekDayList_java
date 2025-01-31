@@ -25,4 +25,8 @@ public class WeekDayHandler {
     public String getSpecificDay(String day) {
         return weekDayHandler.get(weekDayHandler.indexOf(day));
     }
+
+    public boolean dayExists(String day) {
+        return weekDayHandler.contains(day);
+    }
 }
