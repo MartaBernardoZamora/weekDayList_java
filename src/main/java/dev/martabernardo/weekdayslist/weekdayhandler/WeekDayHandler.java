@@ -31,7 +31,6 @@ public class WeekDayHandler {
     }
 
     public void emptyList() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'emptyList'");
+        weekDayHandler.clear();
     }
 }
