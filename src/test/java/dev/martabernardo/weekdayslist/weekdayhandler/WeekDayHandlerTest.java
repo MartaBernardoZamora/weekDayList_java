@@ -79,4 +79,16 @@ public class WeekDayHandlerTest {
 
         assertThat(dayExists, is(true));
     }
+    @Test
+    @DisplayName("Test emtpyList method")
+    void testEmptyList() {
+        WeekDayHandler weekDayHandler = new WeekDayHandler();
+        weekDayHandler.createList();
+
+        weekDayHandler.emptyList();
+
+        List<String> daysExpected = weekDayHandler.getDays();
+
+        assertThat(daysExpected.size(), is(0));
+    }
 }

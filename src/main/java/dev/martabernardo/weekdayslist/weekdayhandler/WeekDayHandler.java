@@ -29,4 +29,8 @@ public class WeekDayHandler {
     public boolean dayExists(String day) {
         return weekDayHandler.contains(day);
     }
+
+    public void emptyList() {
+        weekDayHandler.clear();
+    }
 }
