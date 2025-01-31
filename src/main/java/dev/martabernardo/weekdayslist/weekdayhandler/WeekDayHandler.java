@@ -13,4 +13,8 @@ public class WeekDayHandler {
     public List<String> getDays() {
         return weekDayHandler;
     }
+
+    public int getSizeList() {
+        return weekDayHandler.size();
+    }
 }
