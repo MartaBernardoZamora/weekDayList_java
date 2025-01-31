@@ -21,4 +21,9 @@ public class WeekDayHandler {
     public void deleteDay(String day) {
         weekDayHandler.remove(day);
     }
+
+    public String getSpecificDay(String string) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSpecificDay'");
+    }
 }
